@@ -1,0 +1,37 @@
+[
+  {
+    "icon": "images/Blue.png",
+    "url": "http://www.google.com",
+    "title": "Blue" 
+  },
+  {
+    "icon": "images/Buttercream.png",
+    "url": "http://www.google.co.jp",
+    "title": "Buttercream" 
+  },
+  {
+    "icon": "images/Cherry_Chocolate.png",
+    "url": "http://www.google.co.uk",
+    "title": "Cherry Chocolate" 
+  },
+  {
+    "icon": "images/Christmas.png",
+    "url": "http://www.msn.co.jp",
+    "title": "Christmas" 
+  },
+  {
+    "icon": "images/Pink.png",
+    "url": "http://www.pink.com",
+    "title": "Pink" 
+  },
+  {
+    "icon": "images/Snowflake.png",
+    "url": "http://snowflake.com/",
+    "title": "Snowflake" 
+  },
+  {
+    "icon": "images/White.png",
+    "url": "http://white.com/",
+    "title": "White" 
+  }
+]

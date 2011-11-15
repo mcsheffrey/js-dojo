@@ -1,0 +1,36 @@
+body{
+
+}
+
+li{
+  list-style: none;
+  display: block;
+}
+
+#tabs .tab-contents ul{
+  clear: both;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#tabs .tab-contents li{
+  border: solid 1px #DDD;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+
+
+#tabs .tab-menu ul{
+  width: 400px;
+  height: 100px;
+   
+}
+
+
+#tabs .tab-menu li{
+  float: left;
+  border: solid 1px #ddd;
+  padding: 30px;
+}

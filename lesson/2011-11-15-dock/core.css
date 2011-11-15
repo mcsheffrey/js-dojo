@@ -1,0 +1,28 @@
+body{
+  padding: 30px;
+}
+
+#dock{
+        
+}
+
+#dock ul li{
+  float: left;
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+#dock ul li a{
+  width: 60px;
+  display: block;
+}
+
+#dock ul li a span{
+  display: none;
+}
+
+#dock ul li img{
+  height: auto;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+.header{
+  width: 800px;
+  height: 200px;
+  background-color: brown;  
+}
+
+.right{
+  width: 200px;
+  height: 5000px;
+  background-color: hotpink;
+  float: left;
+  position: relative;
+}
+
+.right .sticky-box{
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  position: absolute;
+}
+
+.left{
+  background-color: pink;
+  width: 600px;
+  height: 5000px;  
+  float: left;
+  clear: left;
+}

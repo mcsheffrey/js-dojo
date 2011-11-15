@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>jQuery Queue And Dequeue</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // When the DOM is ready, initialize scripts.
+      jQuery(function($) {
+
+        // Get a handle on the paragraph we want to update.
+        var para = $("p:first");
+
+        // Add the first queue item. Unlike the native animation
+        // methods, manually created queue items don't start
+        // executing right away - we have to manually call the
+        // dequeue() method at the end.
+        para.queue("testQueue", function(next) {
+          para.html("This is queue item #1: Hot");
+
+          // Each queue method is passed a "next" method
+          // reference. This method encapsulates the
+          // name of the queue into a function. This way
+          // we can dequeue the current queue without
+          // having to know its name.
+          next();
+        });
+        // Delay the queue for a bit.
+        para.delay(1500, "testQueue");
+
+        // Add the next queue item.
+        para.queue("testQueue", function(next) {
+          para.html("This is queue item #2: Sexy");
+          next();
+        });
+        // Delay the queue for a bit.
+        para.delay(1500, "testQueue");
+
+        // Add the next queue item.
+        para.queue("testQueue", function(next) {
+          para.html("This is queue item #3: Sleezy");
+          next();
+        });
+        // ---------------------------------------------- //
+
+        // When we have our queue set up, we have to manually
+        // dequeue the first item to get the queue to start
+        // processing.
+        var test = para.queue("testQueue");
+
+        var newQ = [];
+
+        $(test).each(function() {
+
+          newQ.push(this);
+
+        });
+
+        para.dequeue("testQueue");
+
+        para.bind({
+
+          click: function() {
+
+            console.info('aa');
+           
+            console.info(newQ);
+            console.info(para.queue("testQueue"));
+            para.queue("testQueue", newQ);
+            console.info(para.queue("testQueue"));
+            //next();
+
+            para.dequeue("testQueue");
+
+          }
+        })
+
+      });
+
+    </script>
+  </head>
+  <body>
+    <h1> jQuery Queue And Dequeue </h1>
+    <p>
+      This is where the queue output will go.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body{
+
+}
+
+li{
+  list-style: none;
+  display: block;
+}
+
+#tabs .tab-contents{
+  clear: both;
+  position: relative;
+}
+
+#tabs .tab-contents li{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  padding: 30px;
+}
+
+#tabs .tab-contents strong{
+  color: #236;
+}
+
+
+#tabs .tab-menu{
+  position: relative;
+}
+
+#tabs .tab-menu li{
+  float: left;
+  padding: 30px;
+}
+
+#tabs .tab-menu li a{
+  color: #236;
+}
+
+.tab0{
+  background-color: #99f;
+}
+
+.tab1{
+  background-color: #9f9;
+}
+
+.tab2{
+  background-color: #f99;
+}

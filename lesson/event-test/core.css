@@ -1,0 +1,28 @@
+#event-test,
+#event-test p,
+#event-test p a,
+#event-test p a span{
+  padding: 100px;
+  border: 1px solid red;
+  background-color: red;
+  display: block;
+  font-size: 30px;
+  color: white;
+  opacity: .6;
+}
+
+#event-test p{
+  border-color: blue; 
+  background-color: blue;
+}
+
+#event-test p a{
+  border-color: green; 
+  background-color: green;
+}
+
+#event-test p a span{
+  border-color: yellow; 
+  background-color: yellow;
+  color: black;
+}
